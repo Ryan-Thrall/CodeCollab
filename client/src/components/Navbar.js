@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -12,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="brand-title">Brand Name</div>
+      <Link to="/" className="brand-title">Brand Name</Link>
       <a href="#" className="toggle-button" onClick={toggleClass} >
         <span className="bar"></span>
         <span className="bar"></span>
@@ -20,9 +21,9 @@ const Navbar = () => {
       </a>
       <div className={isActive ? 'navbar-links active' : 'navbar-links'}>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/friends">Friends</Link></li>
+          <li><Link to="/about">About</Link></li>
         </ul>
 
       </div>
