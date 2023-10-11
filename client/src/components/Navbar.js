@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="brand-title">Brand Name</Link>
+      <Link to="/" className="brand-title">Code Collab</Link>
       <a href="#" className="toggle-button" onClick={toggleClass} >
         <span className="bar"></span>
         <span className="bar"></span>
